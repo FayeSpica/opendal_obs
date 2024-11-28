@@ -175,7 +175,7 @@ impl Builder for ObsBuilder {
             if host.starts_with("obs.") && host.ends_with(".myhuaweicloud.com") {
                 (format!("{bucket}.{host}"), true)
             } else {
-                (host, false)
+                (host, true)
             }
         };
         debug!("backend use endpoint {}", &endpoint);
