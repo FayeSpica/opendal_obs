@@ -20,7 +20,7 @@ categories = ["filesystem"]
 description = "Apache OpenDAL™: Access data freely, painlessly, and efficiently."
 exclude = ["/tests/"]
 keywords = ["storage", "fs", "s3", "azblob", "gcs"]
-name = "opendal"
+name = "opendal_obs"
 
 authors = ["Apache OpenDAL <dev@opendal.apache.org>"]
 edition = "2021"
@@ -38,7 +38,7 @@ all-features = true
 
 [workspace]
 default-members = ["."]
-members = [".", "examples/*", "fuzz", "edge/*", "benches/vs_*"]
+members = ["."]
 
 [workspace.package]
 edition = "2021"
